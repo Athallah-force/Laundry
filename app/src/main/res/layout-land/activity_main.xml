@@ -98,7 +98,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/transaksi" />
+                        android:src="@drawable/akun" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -121,7 +121,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/pelanggan" />
+                        android:src="@drawable/pegawai" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/laporan" />
+                        android:src="@drawable/cabang" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -180,7 +180,7 @@
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/akun"
+                android:src="@drawable/transaksi"
                 android:layout_marginTop="5dp"/>
             <TextView
                 android:id="@+id/tvcard2"
@@ -279,7 +279,7 @@
                 android:id="@+id/img7"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/pegawai"
+                android:src="@drawable/laporan"
                 android:layout_marginTop="5dp"/>
             <TextView
                 android:id="@+id/tvcard5"
@@ -312,7 +312,7 @@
                 android:id="@+id/img8"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/cabang"
+                android:src="@drawable/pelanggan"
                 android:layout_marginTop="5dp"/>
             <TextView
                 android:id="@+id/tvcard6"
