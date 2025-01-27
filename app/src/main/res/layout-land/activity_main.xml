@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#ffffff"
+    android:background="@drawable/landscap"
     android:padding="15dp"
     android:id="@+id/main"
     tools:context=".MainActivity">
@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="8 Januari 2025"
         android:textSize="20sp"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -44,7 +45,8 @@
         android:layout_height="300dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardMaxElevation="20dp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="20dp"
         app:layout_constraintTop_toBottomOf="@id/greeting"
@@ -57,6 +59,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:elevation="50dp"
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/label_estimation"
@@ -98,7 +101,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/akun" />
+                        android:src="@drawable/account" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -106,6 +109,7 @@
                         android:text="Akun"
                         android:textSize="15sp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="25dp" />
                 </LinearLayout>
@@ -121,13 +125,14 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/pegawai" />
+                        android:src="@drawable/karyawan" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pegawai"
                         android:textSize="15sp"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="25dp" />
@@ -144,13 +149,14 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/cabang" />
+                        android:src="@drawable/toko" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cabang"
                         android:textSize="15sp"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="25dp" />
@@ -168,7 +174,8 @@
         app:cardCornerRadius="20dp"
         android:layout_marginTop="55dp"
         android:layout_marginStart="15dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintStart_toEndOf="@id/card_estimation"
         app:layout_constraintTop_toTopOf="parent">
         <LinearLayout
@@ -179,17 +186,19 @@
             <ImageView
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/transaksi"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="80dp"
+                android:src="@drawable/uang"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Transaksi"
+                android:textColor="@color/black"
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:layout_marginTop="10dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -200,7 +209,7 @@
         app:cardCornerRadius="20dp"
         android:layout_marginTop="55dp"
         android:layout_marginStart="15dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
         app:layout_constraintStart_toEndOf="@id/card2"
         app:layout_constraintTop_toTopOf="parent">
         <LinearLayout
@@ -211,9 +220,9 @@
             <ImageView
                 android:id="@+id/img5"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/layanan"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="80dp"
+                android:src="@drawable/laundry"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard3"
                 android:layout_width="match_parent"
@@ -222,8 +231,9 @@
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -233,7 +243,8 @@
         android:layout_marginTop="55dp"
         app:cardCornerRadius="20dp"
         android:layout_marginStart="5dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/card3"
         app:layout_constraintTop_toTopOf="parent">
@@ -245,19 +256,20 @@
             <ImageView
                 android:id="@+id/img6"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/tambahan"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="80dp"
+                android:src="@drawable/plus"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tambahan"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -267,7 +279,8 @@
         app:cardCornerRadius="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintStart_toEndOf="@id/card6"
         app:layout_constraintTop_toBottomOf="@id/card3">
         <LinearLayout
@@ -278,9 +291,9 @@
             <ImageView
                 android:id="@+id/img7"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/laporan"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="80dp"
+                android:src="@drawable/report"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard5"
                 android:layout_width="match_parent"
@@ -289,8 +302,9 @@
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -300,7 +314,8 @@
         app:cardCornerRadius="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintTop_toBottomOf="@+id/card2"
         app:layout_constraintStart_toEndOf="@id/card_estimation">
         <LinearLayout
@@ -311,9 +326,9 @@
             <ImageView
                 android:id="@+id/img8"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/pelanggan"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="80dp"
+                android:src="@drawable/cus"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard6"
                 android:layout_width="match_parent"
@@ -321,9 +336,10 @@
                 android:text="Pelanggan"
                 android:textAlignment="center"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -333,7 +349,8 @@
         android:layout_marginTop="15dp"
         app:cardCornerRadius="20dp"
         android:layout_marginStart="5dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/card5"
         app:layout_constraintTop_toBottomOf="@+id/card4" >
@@ -345,9 +362,9 @@
             <ImageView
                 android:id="@+id/img9"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/printer"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="80dp"
+                android:src="@drawable/cetak"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard7"
                 android:layout_width="match_parent"
@@ -356,8 +373,9 @@
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

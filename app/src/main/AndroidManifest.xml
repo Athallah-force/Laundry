@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
         <activity
+            android:name=".gradient_background_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".tambah_pelanggan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".card_data_pelanggan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".data_pelanggan_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

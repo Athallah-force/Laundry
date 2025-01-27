@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#ffffff"
+    android:background="@drawable/desain"
     android:padding="15dp"
     android:id="@+id/main"
     tools:context=".MainActivity">
@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="08 Januari 2025"
         android:textSize="15sp"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/greeting"
         app:layout_constraintStart_toEndOf="@id/greeting"
         android:layout_marginStart="45dp"
@@ -41,8 +42,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        android:backgroundTint="#CBDCEB"
+        app:cardElevation="20dp"
+        android:backgroundTint="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/date"
@@ -91,9 +92,9 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@drawable/transaksi" />
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/uang" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -101,6 +102,7 @@
                         android:text="Transaksi"
                         android:textSize="14sp"
                         android:textStyle="bold"
+                        android:textColor="#000000"
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
@@ -113,9 +115,9 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@drawable/pelanggan" />
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cus" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -123,6 +125,7 @@
                         android:text="Pelanggan"
                         android:textSize="14sp"
                         android:textStyle="bold"
+                        android:textColor="#000"
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
@@ -135,15 +138,16 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@drawable/laporan" />
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/report" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Laporan"
                         android:textSize="14sp"
+                        android:textColor="#000"
                         android:textStyle="bold"
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
@@ -170,6 +174,7 @@
         android:layout_height="wrap_content"
         android:text="Jangan Kecewakan Pelanggan"
         android:textSize="14sp"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/subheading"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -184,7 +189,8 @@
         app:cardCornerRadius="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginStart="5dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintRight_toLeftOf="@+id/card3"
         app:layout_constraintTop_toBottomOf="@+id/subheading_detail"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,15 +203,17 @@
             <ImageView
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/akun"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="70dp"
+                android:src="@drawable/account"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Akun"
                 android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title" />
@@ -217,7 +225,8 @@
         android:layout_height="120dp"
         app:cardCornerRadius="20dp"
         android:layout_marginTop="15dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintRight_toLeftOf="@+id/card2"
         app:layout_constraintLeft_toRightOf="@+id/card4"
         app:layout_constraintTop_toBottomOf="@+id/subheading_detail"
@@ -230,9 +239,9 @@
             <ImageView
                 android:id="@+id/img5"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/layanan"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="70dp"
+                android:src="@drawable/laundry"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard3"
                 android:layout_width="match_parent"
@@ -240,9 +249,10 @@
                 android:text="Layanan"
                 android:textAlignment="center"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -252,7 +262,8 @@
         android:layout_marginTop="15dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintStart_toEndOf="@+id/card3"
         app:layout_constraintTop_toBottomOf="@+id/subheading_detail"
         app:layout_constraintBottom_toTopOf="@+id/card7">
@@ -264,19 +275,20 @@
             <ImageView
                 android:id="@+id/img6"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/tambahan"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="70dp"
+                android:src="@drawable/plus"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tambahan"
+                android:textColor="@color/black"
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -285,7 +297,8 @@
         android:layout_height="120dp"
         app:cardCornerRadius="20dp"
         android:layout_marginTop="15dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         android:layout_marginStart="5dp"
         app:layout_constraintRight_toLeftOf="@+id/card3"
         app:layout_constraintTop_toBottomOf="@+id/card2"
@@ -298,9 +311,9 @@
             <ImageView
                 android:id="@+id/img7"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/pegawai"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="70dp"
+                android:src="@drawable/karyawan"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard5"
                 android:layout_width="match_parent"
@@ -309,8 +322,9 @@
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -319,7 +333,8 @@
         android:layout_height="120dp"
         app:cardCornerRadius="20dp"
         android:layout_marginTop="15dp"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintRight_toLeftOf="@+id/card5"
         app:layout_constraintLeft_toRightOf="@+id/card7"
         app:layout_constraintTop_toBottomOf="@+id/card3"
@@ -332,9 +347,9 @@
             <ImageView
                 android:id="@+id/img8"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/cabang"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="70dp"
+                android:src="@drawable/toko"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard6"
                 android:layout_width="match_parent"
@@ -343,8 +358,9 @@
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -354,7 +370,8 @@
         android:layout_marginTop="15dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#CBDCEB"
+        android:backgroundTint="#fff"
+        app:cardElevation="20dp"
         app:layout_constraintStart_toEndOf="@+id/card6"
         app:layout_constraintTop_toBottomOf="@+id/card4" >
         <LinearLayout
@@ -365,9 +382,9 @@
             <ImageView
                 android:id="@+id/img9"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/printer"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="70dp"
+                android:src="@drawable/cetak"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/tvcard7"
                 android:layout_width="match_parent"
@@ -375,9 +392,10 @@
                 android:text="Printer"
                 android:textAlignment="center"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
