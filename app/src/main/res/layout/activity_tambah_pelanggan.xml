@@ -99,6 +99,7 @@
         android:layout_height="wrap_content"
         android:text="Simpan"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#578FCA"
         app:layout_constraintTop_toBottomOf="@id/et_nohp"
         />
 

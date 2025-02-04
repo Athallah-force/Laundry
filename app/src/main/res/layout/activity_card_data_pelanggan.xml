@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +87,73 @@
                     android:text="Hubungi"
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="#A1E3F9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
                     />
                 <Button
                     android:id="@+id/bt_lihat"
@@ -96,7 +162,7 @@
                     android:text="Lihat"
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#A1E3F9"
                     />
 
             </GridLayout>
