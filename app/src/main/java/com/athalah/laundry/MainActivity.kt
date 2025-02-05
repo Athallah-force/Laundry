@@ -2,15 +2,12 @@ package com.athalah.laundry
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
+import pelanggan.Activity_layanan_pelanggan
 
 
 class MainActivity : AppCompatActivity() {

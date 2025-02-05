@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/desain"
-    tools:context=".Activity_layanan_pelanggan">
+    tools:context="pelanggan.Activity_layanan_pelanggan">
     <!-- Welcome Text -->
     <TextView
         android:id="@+id/tv_welcome"
@@ -63,8 +63,8 @@
         android:id="@+id/img_layanan"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/sun"
-        android:layout_marginTop="30dp"
+        android:src="@drawable/cuci"
+        android:layout_marginTop="50dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +75,7 @@
         android:layout_height="wrap_content"
         android:columnCount="2"
         android:rowCount="3"
+        android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/img_layanan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -83,7 +84,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -105,7 +105,11 @@
                     android:text="Cuci dan setrika"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="4"
+                    android:shadowRadius="3" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -114,7 +118,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -136,7 +139,11 @@
                     android:text="Mengeringkan"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="3" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -145,7 +152,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -167,7 +173,11 @@
                     android:text="Hanya setrika"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="3" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -176,7 +186,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -198,7 +207,11 @@
                     android:text="Sepatu dan tas"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="3" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -207,7 +220,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -229,7 +241,11 @@
                     android:text="Bed Cover"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="3" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -238,7 +254,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -260,7 +275,11 @@
                     android:text="Karpet"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="3" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -270,7 +289,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -292,7 +310,11 @@
                     android:text="Express Laundry"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="3" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -302,7 +324,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="5dp"
-            android:backgroundTint="@color/white"
             android:layout_margin="8dp">
 
             <LinearLayout
@@ -324,7 +345,11 @@
                     android:text="Pakaian khusus"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
-                    android:textColor="#000000" />
+                    android:textColor="#ffffff"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="3"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

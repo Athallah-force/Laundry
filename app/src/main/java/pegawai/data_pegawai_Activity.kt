@@ -1,4 +1,4 @@
-package com.athalah.laundry
+package pegawai
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Activity_layanan_pelanggan : AppCompatActivity() {
+class data_pegawai_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_layanan_pelanggan)
+        setContentView(R.layout.activity_data_pegawai)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

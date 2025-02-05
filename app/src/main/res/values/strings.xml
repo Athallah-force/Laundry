@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Laundry</string>
+    <string name="card_pelanggan_id">ID Pelanggan</string>
+    <string name="card_data_pelanggan">ID Nama</string>
+    <string name="card_data_alamat">ID Alamat</string>
+    <string name="card_data_Nohp">ID No HP</string>
+    <string name="card_data_terdaftar">ID Terdaftar</string>
+    <string name="card_data_hubungi">ID Hubungi</string>
+    <string name="card_data_lihat">ID Lihat</string>
+    <string name="tambah_pelanggan">ID Simpan</string>
+    <string name="tambah_pelanggan_judul">ID Judul</string>
+    <string name="tambah_pelanggan_nama">ID Nama</string>
+    <string name="tambah_pelanggan_alamat">ID Alamat</string>
+    <string name="tambah_pelanggan_no">ID No HP</string>
+    <string name="tambah_pelanggan_cabang">ID Cabang</string>
+    <string name="card_data_pegawai">ID Judul</string>
+    <string name="card_data_pegawai_cabang">ID Cabang</string>
 </resources>

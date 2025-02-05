@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:text="Estimasi Hari Ini"
                 android:textSize="16sp"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
@@ -192,8 +192,7 @@
         android:shadowColor="@color/black"
         android:shadowDx="4"
         android:shadowDy="4"
-        android:shadowRadius="10"
-        android:textStyle="bold"
+        android:shadowRadius="3"
         app:layout_constraintTop_toBottomOf="@id/subheading"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
