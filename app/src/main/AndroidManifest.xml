@@ -13,19 +13,25 @@
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
         <activity
-            android:name=".data_pegawai_Activity"
+            android:name="layanan.tambah_layanan_Activity"
             android:exported="false" />
         <activity
-            android:name="pelanggan.Activity_layanan_pelanggan"
+            android:name=".data_layanan_activity"
             android:exported="false" />
         <activity
-            android:name=".tambah_pelanggan_Activity"
+            android:name="pegawai.tambah_pegawai_Activity"
             android:exported="false" />
         <activity
-            android:name=".card_data_pelanggan_Activity"
+            android:name="pegawai.data_pegawai_Activity"
             android:exported="false" />
         <activity
-            android:name=".data_pelanggan_Activity"
+            android:name=".Activity_layanan_pelanggan"
+            android:exported="false" />
+        <activity
+            android:name="pelanggan.tambah_pelanggan_Activity"
+            android:exported="false" />
+        <activity
+            android:name="pelanggan.data_pelanggan_Activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -14,6 +14,8 @@
     <string name="tambah_pelanggan_alamat">Address</string>
     <string name="tambah_pelanggan_no">Phone Number</string>
     <string name="tambah_pelanggan_cabang">Branch Store</string>
-    <string name="card_data_pegawai">ID Employee</string>
+    <string name="card_data_pegawai">ID Embloyee</string>
     <string name="card_data_pegawai_cabang">Branch</string>
+    <string name="tambah_pegawai">Add Embloyee</string>
+    <string name="tambah_layanan">Add Service</string>
 </resources>

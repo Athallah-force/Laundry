@@ -16,4 +16,6 @@
     <string name="tambah_pelanggan_cabang">Toko Cabang</string>
     <string name="card_data_pegawai">ID Pegawai</string>
     <string name="card_data_pegawai_cabang">Cabang</string>
+    <string name="tambah_pegawai">Tambah Pegawai</string>
+    <string name="tambah_layanan">Tambah Layanan</string>
 </resources>

@@ -5,22 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/desain"
-    tools:context="pelanggan.data_pelanggan_Activity">
-
+    tools:context="layanan.data_layanan_activity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_data_pelanggan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/card_data_pelanggan">
+        tools:listitem="@layout/card_data_layanan">
     </androidx.recyclerview.widget.RecyclerView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_tambah_pelanggan"
+            android:id="@+id/bt_data_layanan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/tam"
@@ -31,4 +29,5 @@
             android:contentDescription="+"
             android:layout_marginBottom="16dp"/>
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

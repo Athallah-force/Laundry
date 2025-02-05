@@ -15,4 +15,6 @@
     <string name="tambah_pelanggan_cabang">ID Cabang</string>
     <string name="card_data_pegawai">ID Judul</string>
     <string name="card_data_pegawai_cabang">ID Cabang</string>
+    <string name="tambah_pegawai">ID Judul</string>
+    <string name="tambah_layanan">ID Judul</string>
 </resources>

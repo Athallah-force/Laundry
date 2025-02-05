@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/desain"
-    tools:context="pelanggan.Activity_layanan_pelanggan">
+    tools:context="Activity_layanan_pelanggan">
     <!-- Welcome Text -->
     <TextView
         android:id="@+id/tv_welcome"

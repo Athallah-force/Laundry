@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Header ID Layanan -->
+        <TextView
+            android:id="@+id/tv_id_layanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Layanan"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <!-- Nama Layanan -->
+        <TextView
+            android:id="@+id/tv_nama_layanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Layanan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Harga -->
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Nama Cabang -->
+        <TextView
+            android:id="@+id/tv_nama_cabang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Cabang"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
