@@ -18,4 +18,10 @@
     <string name="card_data_pegawai_cabang">Branch</string>
     <string name="tambah_pegawai">Add Embloyee</string>
     <string name="tambah_layanan">Add Service</string>
+    <string name="validasi_nama_pelanggan">Name</string>
+    <string name="validasi_alamat_pelanggan">Address</string>
+    <string name="validasi_nohp_pelanggan">Phone Number</string>
+    <string name="validasi_cabang_pelanggan">Branch</string>
+    <string name="tambah_pelanggan_sukses">Succes</string>
+    <string name="tambah_pelanggan_gagal">Fail</string>
 </resources>

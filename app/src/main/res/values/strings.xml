@@ -17,4 +17,10 @@
     <string name="card_data_pegawai_cabang">ID Cabang</string>
     <string name="tambah_pegawai">ID Judul</string>
     <string name="tambah_layanan">ID Judul</string>
+    <string name="validasi_nama_pelanggan">ID Tidak Boleh Kosong</string>
+    <string name="validasi_alamat_pelanggan">Tidak Boleh Kosong</string>
+    <string name="validasi_nohp_pelanggan">Tidak Boleh Kosong</string>
+    <string name="validasi_cabang_pelanggan">Tidak Boleh Kosong</string>
+    <string name="tambah_pelanggan_sukses">Berhasil</string>
+    <string name="tambah_pelanggan_gagal">Gagal</string>
 </resources>

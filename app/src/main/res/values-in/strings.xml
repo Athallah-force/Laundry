@@ -18,4 +18,10 @@
     <string name="card_data_pegawai_cabang">Cabang</string>
     <string name="tambah_pegawai">Tambah Pegawai</string>
     <string name="tambah_layanan">Tambah Layanan</string>
+    <string name="validasi_nama_pelanggan">Nama</string>
+    <string name="validasi_alamat_pelanggan">Alamat</string>
+    <string name="validasi_nohp_pelanggan">Nomer Handphone</string>
+    <string name="validasi_cabang_pelanggan">Cabang</string>
+    <string name="tambah_pelanggan_sukses">Berhasil</string>
+    <string name="tambah_pelanggan_gagal">Gagal</string>
 </resources>

@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/cv_card_pelanggan"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp"
     android:backgroundTint="@color/white"
@@ -77,16 +78,18 @@
                 android:id="@+id/bt_hubungi"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="Hubungi"
-                android:layout_marginEnd="5dp"
+                android:layout_row="0"
+                android:layout_column="0"
                 android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:backgroundTint="#B2C8DF"
-                />
+                android:text="@string/card_data_hubungi" />
+
             <Button
                 android:id="@+id/bt_lihat"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="Lihat"
+                android:text="@string/card_data_lihat"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="#A1E3F9"

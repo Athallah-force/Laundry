@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardCornerRadius="15dp"
+    android:id="@+id/card_layanan"
     app:cardElevation="5dp"
     android:backgroundTint="@color/white">
 
