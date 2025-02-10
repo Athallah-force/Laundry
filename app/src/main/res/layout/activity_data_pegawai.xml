@@ -10,17 +10,17 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_data_pelanggan"
+        android:id="@+id/rv_data_pegawai"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/card_data_pelanggan">
+        tools:listitem="@layout/card_data_pegawai">
     </androidx.recyclerview.widget.RecyclerView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/bt_data_pengguna_tambah"
+            android:id="@+id/bt_data_pegawai_tambah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/tam"

@@ -18,10 +18,10 @@ class tambah_pelanggan_Activity : AppCompatActivity() {
     val database = FirebaseDatabase.getInstance()
     val myRef = database.getReference("pelanggan")
     lateinit var tv_tambah_pelanggan: TextView
-    lateinit var tv_namalengkap: EditText
-    lateinit var tv_alamat: EditText
-    lateinit var tv_nohp: EditText
-    lateinit var tv_cabang: EditText
+    lateinit var et_namalengkap: EditText
+    lateinit var et_alamat: EditText
+    lateinit var et_nohp: EditText
+    lateinit var et_cabang: EditText
     lateinit var bt_simpan: Button
 
 
@@ -41,58 +41,58 @@ class tambah_pelanggan_Activity : AppCompatActivity() {
     }
 
     fun init() {
-        tv_tambah_pelanggan = findViewById(R.id.tv_tambah_pengguna)
-        tv_namalengkap = findViewById(R.id.et_namalengkap)
-        tv_alamat = findViewById(R.id.et_alamat)
-        tv_nohp = findViewById(R.id.et_nohp)
-        tv_cabang = findViewById(R.id.et_cabang)
+        tv_tambah_pelanggan = findViewById(R.id.tv_tambah_pelanggan)
+        et_namalengkap = findViewById(R.id.et_namalengkap)
+        et_alamat = findViewById(R.id.et_alamat)
+        et_nohp = findViewById(R.id.et_nohp)
+        et_cabang = findViewById(R.id.et_cabang)
         bt_simpan = findViewById(R.id.bt_simpan)
     }
 
     fun cekValidasi() {
-        val nama = tv_namalengkap.text.toString()
-        val alamat = tv_alamat.text.toString()
-        val nohp = tv_nohp.text.toString()
-        val cabang = tv_cabang.text.toString()
+        val nama = et_namalengkap.text.toString()
+        val alamat = et_alamat.text.toString()
+        val nohp = et_nohp.text.toString()
+        val cabang = et_cabang.text.toString()
         //validasi data
         if (nama.isEmpty()) {
-            tv_namalengkap.error = this.getString(R.string.validasi_nama_pelanggan)
+            et_namalengkap.error = this.getString(R.string.validasi_nama_pelanggan)
             Toast.makeText(
                 this@tambah_pelanggan_Activity,
                 this.getString(R.string.validasi_nama_pelanggan),
                 Toast.LENGTH_SHORT
             ).show()
-            tv_namalengkap.requestFocus()
+            et_namalengkap.requestFocus()
             return
         }
         if (alamat.isEmpty()) {
-            tv_alamat.error = this.getString(R.string.validasi_alamat_pelanggan)
+            et_alamat.error = this.getString(R.string.validasi_alamat_pelanggan)
             Toast.makeText(
                 this@tambah_pelanggan_Activity,
                 this.getString(R.string.validasi_alamat_pelanggan),
                 Toast.LENGTH_SHORT
             ).show()
-            tv_alamat.requestFocus()
+            et_alamat.requestFocus()
             return
         }
         if (nohp.isEmpty()) {
-            tv_nohp.error = this.getString(R.string.validasi_nohp_pelanggan)
+            et_nohp.error = this.getString(R.string.validasi_nohp_pelanggan)
             Toast.makeText(
                 this@tambah_pelanggan_Activity,
                 this.getString(R.string.validasi_nohp_pelanggan),
                 Toast.LENGTH_SHORT
             ).show()
-            tv_nohp.requestFocus()
+            et_nohp.requestFocus()
             return
         }
         if (cabang.isEmpty()) {
-            tv_cabang.error = this.getString(R.string.validasi_cabang_pelanggan)
+            et_cabang.error = this.getString(R.string.validasi_cabang_pelanggan)
             Toast.makeText(
                 this@tambah_pelanggan_Activity,
                 this.getString(R.string.validasi_cabang_pelanggan),
                 Toast.LENGTH_SHORT
             ).show()
-            tv_cabang.requestFocus()
+            et_cabang.requestFocus()
             return
         }
         simpan()
@@ -102,10 +102,10 @@ class tambah_pelanggan_Activity : AppCompatActivity() {
         val pelangganId = pelangganBaru.key
         val data = model_pelanggan(
             pelangganId.toString(),
-            tv_namalengkap.text.toString(),
-            tv_alamat.text.toString(),
-            tv_nohp.text.toString(),
-            tv_cabang.text.toString()
+            et_namalengkap.text.toString(),
+            et_alamat.text.toString(),
+            et_nohp.text.toString(),
+            et_cabang.text.toString()
         )
         pelangganBaru.setValue(data)
             .addOnCompleteListener {

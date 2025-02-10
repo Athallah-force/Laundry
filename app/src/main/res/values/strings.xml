@@ -23,4 +23,21 @@
     <string name="validasi_cabang_pelanggan">Tidak Boleh Kosong</string>
     <string name="tambah_pelanggan_sukses">Berhasil</string>
     <string name="tambah_pelanggan_gagal">Gagal</string>
+    <string name="card_data_pegawai_nama">ID Nama</string>
+    <string name="card_data_pegawai_alamat">ID Alamat</string>
+    <string name="card_data_pegawai_nohp">ID No HP</string>
+    <string name="card_data_pegawai_terdaftar">ID Cabang</string>
+    <string name="card_data_pegawai_hubungi">ID Hubungi</string>
+    <string name="card_data_pegawai_lihat">ID Lihat</string>
+    <string name="tambah_pegawai_nama">ID Nama</string>
+    <string name="tambah_pegawai_alamat">ID Alamat</string>
+    <string name="tambah_pegawai_nohp">ID No Hp</string>
+    <string name="tambah_pegawai_cabang">ID Cabang</string>
+    <string name="tambah_pegawai_simpan">ID Simpan</string>
+    <string name="validasi_nama_pegawai">ID Tidak Boleh Kosong</string>
+    <string name="validasi_alamat_pegawai">Tidak Boleh Kosong</string>
+    <string name="validasi_nohp_pegawai">Tidak Boleh Kosong</string>
+    <string name="validasi_cabang_pegawai">Tidak Boleh kosong</string>
+    <string name="tambah_pegawai_sukses">Berhasil</string>
+    <string name="tambah_pegawai_gagal">Gagal</string>
 </resources>

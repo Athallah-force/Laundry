@@ -24,4 +24,21 @@
     <string name="validasi_cabang_pelanggan">Branch</string>
     <string name="tambah_pelanggan_sukses">Succes</string>
     <string name="tambah_pelanggan_gagal">Fail</string>
+    <string name="card_data_pegawai_nama">Name</string>
+    <string name="card_data_pegawai_alamat">Address</string>
+    <string name="card_data_pegawai_nohp">Handphone Number</string>
+    <string name="card_data_pegawai_terdaftar">Register</string>
+    <string name="card_data_pegawai_hubungi">Contact</string>
+    <string name="card_data_pegawai_lihat">See More</string>
+    <string name="tambah_pegawai_nama">Name</string>
+    <string name="tambah_pegawai_alamat">Address</string>
+    <string name="tambah_pegawai_nohp">Phone Number</string>
+    <string name="tambah_pegawai_cabang">Branch Store</string>
+    <string name="tambah_pegawai_simpan">Save</string>
+    <string name="validasi_nama_pegawai">Name</string>
+    <string name="validasi_alamat_pegawai">Address</string>
+    <string name="validasi_nohp_pegawai">Phone Number</string>
+    <string name="validasi_cabang_pegawai">"Branch "</string>
+    <string name="tambah_pegawai_sukses">Succes</string>
+    <string name="tambah_pegawai_gagal">Fail</string>
 </resources>
