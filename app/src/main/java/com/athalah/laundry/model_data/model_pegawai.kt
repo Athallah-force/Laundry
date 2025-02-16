@@ -5,5 +5,6 @@ public class model_pegawai (
     val nama: String? = null,
     val alamat: String? = null,
     val nohp: String? = null,
+    val terdaftar: String? = null,
     val cabang: String? = null
 )

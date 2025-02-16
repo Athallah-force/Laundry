@@ -13,7 +13,7 @@
     <string name="tambah_pelanggan_nama">Nama Lengkap</string>
     <string name="tambah_pelanggan_alamat">Alamat</string>
     <string name="tambah_pelanggan_no">Nomer Handphone</string>
-    <string name="tambah_pelanggan_cabang">Toko Cabang</string>
+    <string name="tambah_pelanggan_terdaftar">Toko Cabang</string>
     <string name="card_data_pegawai">ID Pegawai</string>
     <string name="card_data_pegawai_cabang">Cabang</string>
     <string name="tambah_pegawai">Tambah Pegawai</string>
@@ -41,4 +41,8 @@
     <string name="validasi_cabang_pegawai">Cabang</string>
     <string name="tambah_pegawai_sukses">Berhasil</string>
     <string name="tambah_pegawai_gagal">Gagal</string>
+    <string name="validasi_terdaftar_pegawai">Terdaftar</string>
+    <string name="tambah_pegawai_terdaftar">Terdaftar</string>
+    <string name="tambah_pelanggan_baru_terdaftar">Terdaftar</string>
+    <string name="validasi_terdaftar_pelanggan">Terdaftar</string>
 </resources>

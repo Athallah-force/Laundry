@@ -25,6 +25,7 @@ class  adapter_data_pegawai(private val listPegawai: ArrayList<model_pegawai>) :
         holder.tv_nama.text = item.nama
         holder.tv_alamat.text = item.alamat
         holder.tv_cabang.text = item.cabang
+        holder.tv_terdaftar.text = item.terdaftar
         holder.tv_nohp.text = item.nohp
 
         holder.bt_hubungi.setOnClickListener(){
@@ -44,6 +45,7 @@ class  adapter_data_pegawai(private val listPegawai: ArrayList<model_pegawai>) :
         val tv_nama: TextView= itemView.findViewById(R.id.tv_nama)
         val tv_alamat: TextView = itemView.findViewById(R.id.tv_alamat)
         val tv_cabang: TextView = itemView.findViewById(R.id.tv_cabang)
+        val tv_terdaftar: TextView = itemView.findViewById(R.id.tv_terdaftar)
         val tv_nohp: TextView = itemView.findViewById(R.id.tv_nohp)
         val bt_hubungi: Button = itemView.findViewById(R.id.bt_hubungi)
         val bt_lihat: Button = itemView.findViewById(R.id.bt_lihat)

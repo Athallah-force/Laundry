@@ -98,25 +98,24 @@
         android:layout_marginBottom="12dp" />
 
     <TextView
-        android:id="@+id/tv_cabang"
+        android:id="@+id/tv_terdaftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tambah_pelanggan_cabang"
+        android:text="@string/tambah_pelanggan_baru_terdaftar"
         android:textSize="16dp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/et_nohp"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/et_nohp"/>
 
     <EditText
-        android:id="@+id/et_cabang"
+        android:id="@+id/et_terdaftar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/tambah_pelanggan_cabang"
+        android:hint="@string/tambah_pelanggan_baru_terdaftar"
         android:padding="12dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/retangle"
-        app:layout_constraintTop_toBottomOf="@id/tv_cabang"
+        app:layout_constraintTop_toBottomOf="@id/tv_terdaftar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="12dp" />
@@ -128,7 +127,7 @@
         android:text="@string/tambah_pelanggan"
         android:layout_marginTop="30dp"
         android:backgroundTint="#578FCA"
-        app:layout_constraintTop_toBottomOf="@id/et_cabang"
+        app:layout_constraintTop_toBottomOf="@id/et_terdaftar"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

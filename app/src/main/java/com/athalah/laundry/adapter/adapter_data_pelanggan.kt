@@ -28,7 +28,6 @@ class  adapter_data_pelanggan(private val listPelanggan: ArrayList<model_pelangg
         holder.tv_alamat.text = item.alamatPelanggan
         holder.tv_terdaftar.text = item.terdaftar
         holder.tv_nohp.text = item.noHPPelanggan
-        holder.tv_terdaftar.text = item.terdaftar
         holder.cvCard.setOnClickListener(){
 
         }

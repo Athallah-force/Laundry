@@ -13,7 +13,6 @@
     <string name="tambah_pelanggan_nama">Full Name</string>
     <string name="tambah_pelanggan_alamat">Address</string>
     <string name="tambah_pelanggan_no">Phone Number</string>
-    <string name="tambah_pelanggan_cabang">Branch Store</string>
     <string name="card_data_pegawai">ID Embloyee</string>
     <string name="card_data_pegawai_cabang">Branch</string>
     <string name="tambah_pegawai">Add Embloyee</string>
@@ -41,4 +40,8 @@
     <string name="validasi_cabang_pegawai">"Branch "</string>
     <string name="tambah_pegawai_sukses">Succes</string>
     <string name="tambah_pegawai_gagal">Fail</string>
+    <string name="validasi_terdaftar_pegawai">Register</string>
+    <string name="tambah_pegawai_terdaftar">Register</string>
+    <string name="tambah_pelanggan_baru_terdaftar">Register</string>
+    <string name="validasi_terdaftar_pelanggan">Register</string>
 </resources>

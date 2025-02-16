@@ -12,7 +12,6 @@
     <string name="tambah_pelanggan_nama">ID Nama</string>
     <string name="tambah_pelanggan_alamat">ID Alamat</string>
     <string name="tambah_pelanggan_no">ID No HP</string>
-    <string name="tambah_pelanggan_cabang">ID Cabang</string>
     <string name="card_data_pegawai">ID Judul</string>
     <string name="card_data_pegawai_cabang">ID Cabang</string>
     <string name="tambah_pegawai">ID Judul</string>
@@ -40,4 +39,8 @@
     <string name="validasi_cabang_pegawai">Tidak Boleh kosong</string>
     <string name="tambah_pegawai_sukses">Berhasil</string>
     <string name="tambah_pegawai_gagal">Gagal</string>
+    <string name="validasi_terdaftar_pegawai">Tidak Boleh Kosong</string>
+    <string name="tambah_pegawai_terdaftar">ID Terdaftar</string>
+    <string name="tambah_pelanggan_baru_terdaftar">ID Terdaftar</string>
+    <string name="validasi_terdaftar_pelanggan">Tidak Boleh Kosong</string>
 </resources>

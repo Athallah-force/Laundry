@@ -43,6 +43,16 @@
             android:layout_marginTop="5dp"
             />
         <TextView
+            android:id="@+id/tv_terdaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_data_pegawai_terdaftar"
+            android:paddingStart="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
             android:id="@+id/tv_cabang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
