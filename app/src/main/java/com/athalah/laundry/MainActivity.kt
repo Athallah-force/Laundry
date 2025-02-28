@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import layanan.data_layanan_activity
 import pegawai.data_pegawai_Activity
 import pelanggan.data_pelanggan_Activity
 import pelanggan.tambah_pelanggan_Activity
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         cv_pelanggan = findViewById(R.id.pelanggan)
 
         cv_layanan.setOnClickListener {
-            val intent = Intent(this, Activity_layanan_pelanggan::class.java)
+            val intent = Intent(this, data_layanan_activity::class.java)
             startActivity(intent)
         }
 

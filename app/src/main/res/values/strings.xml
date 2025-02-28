@@ -43,4 +43,16 @@
     <string name="tambah_pegawai_terdaftar">ID Terdaftar</string>
     <string name="tambah_pelanggan_baru_terdaftar">ID Terdaftar</string>
     <string name="validasi_terdaftar_pelanggan">Tidak Boleh Kosong</string>
+    <string name="tambah_layanan_harga">ID Harga</string>
+    <string name="tambah_layanan_cabang">ID Cabang</string>
+    <string name="tambah_layanan_nama">ID Nama Layanan</string>
+    <string name="validasi_nama_layanan">validasi_nama_layanan</string>
+    <string name="validasi_nama_cabang">validasi_nama_cabang</string>
+    <string name="validasi_harga_layanan">Cantumkan Harga</string>
+    <string name="tambah_layanan_simpan">Simpan Data</string>
+    <string name="tambah_layanan_gagal">Gagal Simpan</string>
+    <string name="card_data_layanan_id">ID Layanan</string>
+    <string name="card_data_layanan_nama">Tidak Boleh Kosong</string>
+    <string name="card_data_layanan_harga">Tidak Boleh Kosong</string>
+    <string name="card_data_layanan_cabang">Tidak Boleh Kosong</string>
 </resources>

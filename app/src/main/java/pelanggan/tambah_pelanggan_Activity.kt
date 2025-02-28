@@ -12,6 +12,9 @@ import androidx.core.view.WindowInsetsCompat
 import com.athalah.laundry.R
 import com.athalah.laundry.model_data.model_pelanggan
 import com.google.firebase.database.FirebaseDatabase
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 
 class tambah_pelanggan_Activity : AppCompatActivity() {
@@ -21,7 +24,7 @@ class tambah_pelanggan_Activity : AppCompatActivity() {
     lateinit var et_namalengkap: EditText
     lateinit var et_alamat: EditText
     lateinit var et_nohp: EditText
-    lateinit var et_terdaftar: EditText
+
     lateinit var bt_simpan: Button
 
 
@@ -45,7 +48,7 @@ class tambah_pelanggan_Activity : AppCompatActivity() {
         et_namalengkap = findViewById(R.id.et_namalengkap)
         et_alamat = findViewById(R.id.et_alamat)
         et_nohp = findViewById(R.id.et_nohp)
-        et_terdaftar = findViewById(R.id.et_terdaftar)
+
         bt_simpan = findViewById(R.id.bt_simpan)
     }
 
@@ -53,7 +56,7 @@ class tambah_pelanggan_Activity : AppCompatActivity() {
         val nama = et_namalengkap.text.toString()
         val alamat = et_alamat.text.toString()
         val nohp = et_nohp.text.toString()
-        val terdaftar = et_terdaftar.text.toString()
+
         //validasi data
         if (nama.isEmpty()) {
             et_namalengkap.error = this.getString(R.string.validasi_nama_pelanggan)
@@ -84,28 +87,22 @@ class tambah_pelanggan_Activity : AppCompatActivity() {
             ).show()
             et_nohp.requestFocus()
             return
-        }
-        if (terdaftar.isEmpty()) {
-            et_terdaftar.error = this.getString(R.string.validasi_terdaftar_pelanggan)
-            Toast.makeText(
-                this@tambah_pelanggan_Activity,
-                this.getString(R.string.validasi_terdaftar_pelanggan),
-                Toast.LENGTH_SHORT
-            ).show()
-            et_terdaftar.requestFocus()
-            return
+
         }
         simpan()
         }
     fun simpan() {
         val pelangganBaru = myRef.push()
         val pelangganId = pelangganBaru.key
+        val currentTime = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
+
         val data = model_pelanggan(
             pelangganId.toString(),
             et_namalengkap.text.toString(),
             et_alamat.text.toString(),
             et_nohp.text.toString(),
-            et_terdaftar.text.toString()
+            currentTime
+
         )
         pelangganBaru.setValue(data)
             .addOnCompleteListener {

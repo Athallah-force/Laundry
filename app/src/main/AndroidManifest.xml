@@ -33,7 +33,7 @@
             android:name="pelanggan.tambah_pelanggan_Activity"
             android:exported="false" />
         <activity
-            android:name="pelanggan.data_pelanggan_Activity"
+            android:name="layanan.data_layanan_activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,6 +1,6 @@
 package com.athalah.laundry.model_data;
 
-public class model_pegawai (
+class model_pegawai (
     val id: String? = null,
     val nama: String? = null,
     val alamat: String? = null,

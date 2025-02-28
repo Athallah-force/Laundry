@@ -13,7 +13,6 @@
     <string name="tambah_pelanggan_nama">Nama Lengkap</string>
     <string name="tambah_pelanggan_alamat">Alamat</string>
     <string name="tambah_pelanggan_no">Nomer Handphone</string>
-    <string name="tambah_pelanggan_terdaftar">Toko Cabang</string>
     <string name="card_data_pegawai">ID Pegawai</string>
     <string name="card_data_pegawai_cabang">Cabang</string>
     <string name="tambah_pegawai">Tambah Pegawai</string>
@@ -45,4 +44,16 @@
     <string name="tambah_pegawai_terdaftar">Terdaftar</string>
     <string name="tambah_pelanggan_baru_terdaftar">Terdaftar</string>
     <string name="validasi_terdaftar_pelanggan">Terdaftar</string>
+    <string name="tambah_layanan_harga">Harga</string>
+    <string name="tambah_layanan_cabang">Cabang</string>
+    <string name="tambah_layanan_nama">Nama Layanan</string>
+    <string name="validasi_nama_layanan">Nama tidak boleh kosong</string>
+    <string name="validasi_harga_layanan">Harga tidak boleh kosong</string>
+    <string name="validasi_nama_cabang">Cabang tidak boleh kosong</string>
+    <string name="tambah_layanan_simpan">Berhasil</string>
+    <string name="tambah_layanan_gagal">Gagal</string>
+    <string name="card_data_layanan_id">ID Layanan</string>
+    <string name="card_data_layanan_nama">Nama Layanan</string>
+    <string name="card_data_layanan_harga">Harga</string>
+    <string name="card_data_layanan_cabang">Nama Cabang</string>
 </resources>

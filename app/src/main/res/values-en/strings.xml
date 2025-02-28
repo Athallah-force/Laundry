@@ -44,4 +44,16 @@
     <string name="tambah_pegawai_terdaftar">Register</string>
     <string name="tambah_pelanggan_baru_terdaftar">Register</string>
     <string name="validasi_terdaftar_pelanggan">Register</string>
+    <string name="tambah_layanan_harga">Price</string>
+    <string name="tambah_layanan_cabang">Branch Store</string>
+    <string name="tambah_layanan_nama">Service Name</string>
+    <string name="validasi_nama_layanan">Name cannot be empty</string>
+    <string name="validasi_harga_layanan">"Price cannot be empty "</string>
+    <string name="validasi_nama_cabang">"Branch cannot be empty "</string>
+    <string name="tambah_layanan_simpan">Succes</string>
+    <string name="tambah_layanan_gagal">Fail</string>
+    <string name="card_data_layanan_id">Service ID</string>
+    <string name="card_data_layanan_nama">Service Name</string>
+    <string name="card_data_layanan_harga">Price</string>
+    <string name="card_data_layanan_cabang">Branch Store Name</string>
 </resources>

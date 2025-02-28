@@ -14,6 +14,9 @@ import androidx.core.view.WindowInsetsCompat
 import com.athalah.laundry.R
 import com.athalah.laundry.model_data.model_pegawai
 import com.google.firebase.database.FirebaseDatabase
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 
 class tambah_pegawai_Activity : AppCompatActivity() {
@@ -23,7 +26,6 @@ class tambah_pegawai_Activity : AppCompatActivity() {
     lateinit var et_namalengkap: EditText
     lateinit var et_alamat: EditText
     lateinit var et_nohp: EditText
-    lateinit var et_terdaftar: EditText
     lateinit var et_cabang: EditText
     lateinit var bt_simpan: Button
 
@@ -48,7 +50,7 @@ class tambah_pegawai_Activity : AppCompatActivity() {
         et_namalengkap = findViewById(R.id.et_namalengkap)
         et_alamat = findViewById(R.id.et_alamat)
         et_nohp = findViewById(R.id.et_nohp)
-        et_terdaftar = findViewById(R.id.et_terdaftar)
+
         et_cabang = findViewById(R.id.et_cabang)
         bt_simpan = findViewById(R.id.bt_simpan)
     }
@@ -58,7 +60,7 @@ class tambah_pegawai_Activity : AppCompatActivity() {
         val alamat = et_alamat.text.toString()
         val nohp = et_nohp.text.toString()
         val cabang = et_cabang.text.toString()
-        val terdaftar = et_terdaftar.text.toString()
+
 
         //validasi data
         if (nama.isEmpty()) {
@@ -101,30 +103,21 @@ class tambah_pegawai_Activity : AppCompatActivity() {
             et_cabang.requestFocus()
             return
         }
-        if (terdaftar.isEmpty()) {
-            et_terdaftar.error = this.getString(R.string.validasi_terdaftar_pegawai)
-            Toast.makeText(
-                this@tambah_pegawai_Activity,
-                this.getString(R.string.validasi_terdaftar_pegawai),
-                Toast.LENGTH_SHORT
-            ).show()
-            et_terdaftar.requestFocus()
-            return
-        }
         simpan()
     }
 
     fun simpan() {
         val pegawaiBaru = myRef.push() // Buat node baru di Firebase
         val pegawaiId = pegawaiBaru.key ?: return // Jika key null, langsung keluar
+        val currentTime = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
 
         val data = model_pegawai(
             id = pegawaiId,
             nama = et_namalengkap.text.toString(),
             alamat = et_alamat.text.toString(),
             nohp = et_nohp.text.toString(),
-            terdaftar = et_terdaftar.text.toString(),
-            cabang = et_cabang.text.toString() // ✅ Pastikan ini tersimpan!
+            terdaftar = currentTime, // Sekarang sesuai dengan model
+            cabang = et_cabang.text.toString()
         )
 
         pegawaiBaru.setValue(data) // Simpan semua data sekaligus
