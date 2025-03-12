@@ -45,6 +45,31 @@ class data_pegawai_Activity : AppCompatActivity() {
             startActivity(intent)
         }
         getData()
+
+        val fabTambahPegawai: FloatingActionButton = findViewById(R.id.bt_data_pegawai_tambah)
+        fabTambahPegawai.setOnClickListener {
+            val intent = Intent(this, tambah_pegawai_Activity::class.java)
+            intent.putExtra("judul", (this.getString(R.string.tambah_pegawai)))
+            intent.putExtra("id", "")
+            intent.putExtra("nama", "")
+            intent.putExtra("alamat", "")
+            intent.putExtra("cabang", "")
+            intent.putExtra("terdaftar", "")
+            intent.putExtra("nohp", "")
+            startActivity(intent)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
