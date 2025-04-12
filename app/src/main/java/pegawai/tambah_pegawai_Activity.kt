@@ -55,7 +55,6 @@ class tambah_pegawai_Activity : AppCompatActivity() {
         et_namalengkap = findViewById(R.id.et_namalengkap)
         et_alamat = findViewById(R.id.et_alamat)
         et_nohp = findViewById(R.id.et_nohp)
-
         et_cabang = findViewById(R.id.et_cabang)
         bt_simpan = findViewById(R.id.bt_simpan)
     }
@@ -114,8 +113,6 @@ class tambah_pegawai_Activity : AppCompatActivity() {
         }
 
     }
-
-
 
 
     fun cekValidasi() {

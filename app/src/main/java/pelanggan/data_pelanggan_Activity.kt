@@ -32,7 +32,6 @@ class data_pelanggan_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_data_pelanggan)
         init()
-
         val layoutManager = LinearLayoutManager(this)
         layoutManager.reverseLayout = true
         layoutManager.stackFromEnd = true
@@ -45,6 +44,19 @@ class data_pelanggan_Activity : AppCompatActivity() {
             startActivity(intent)
         }
         getdata()
+
+        val fabTambahPelanggan: FloatingActionButton = findViewById(R.id.bt_data_pelanggan_tambah)
+        fabTambahPelanggan.setOnClickListener {
+            val intent = Intent(this, tambah_pelanggan_Activity::class.java)
+            intent.putExtra("judul", (this.getString(R.string.tambah_pelanggan)))
+            intent.putExtra("id", "")
+            intent.putExtra("nama", "")
+            intent.putExtra("alamat", "")
+            intent.putExtra("terdaftar", "")
+            intent.putExtra("nohp", "")
+            startActivity(intent)
+
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -68,8 +80,6 @@ class data_pelanggan_Activity : AppCompatActivity() {
                         val pegawai = dataSnapshot.getValue(model_pelanggan::class.java)
                         pelangganList.add(pegawai!!)
                     }
-
-
                     val adapter = adapter_data_pelanggan(pelangganList)
                     rv_data_pelanggan.adapter = adapter
                     adapter.notifyDataSetChanged()

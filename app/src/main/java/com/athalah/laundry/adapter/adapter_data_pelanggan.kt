@@ -1,5 +1,7 @@
 package com.athalah.laundry.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,14 +12,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.athalah.laundry.R
 import com.athalah.laundry.model_data.model_pelanggan
 import pelanggan.data_pelanggan_Activity
+import pelanggan.tambah_pelanggan_Activity
 
 class  adapter_data_pelanggan(private val listPelanggan: ArrayList<model_pelanggan>) :
 
     RecyclerView.Adapter<adapter_data_pelanggan.ViewHolder>() {
+        lateinit var appContext: Context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.card_data_pelanggan, parent, false)
+        appContext = parent.context
         return ViewHolder(view)
     }
 
@@ -35,6 +40,17 @@ class  adapter_data_pelanggan(private val listPelanggan: ArrayList<model_pelangg
 
         }
         holder.bt_lihat.setOnClickListener(){
+
+        }
+        holder.cvCard.setOnClickListener(){
+            val intent = Intent(holder.itemView.context, tambah_pelanggan_Activity::class.java)
+            intent.putExtra("judul", "edit")
+            intent.putExtra("id", item.idPelanggan)
+            intent.putExtra("nama", item.namaPelanggan)
+            intent.putExtra("alamat", item.alamatPelanggan)
+            intent.putExtra("terdaftar", item.terdaftar)
+            intent.putExtra("nohp", item.noHPPelanggan)
+            appContext.startActivity(intent)
 
         }
     }
