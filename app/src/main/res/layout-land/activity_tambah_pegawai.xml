@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/desain"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tv_tambah_pegawai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_pegawai"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Nama Lengkap -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_namalengkap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/tambah_pegawai_nama"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_namalengkap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/tambah_pegawai_nama"
+                android:background="@drawable/retangle"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Alamat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_alamat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/tambah_pegawai_alamat"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_alamat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/tambah_pegawai_alamat"
+                android:background="@drawable/retangle"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- No HP -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_nohp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/tambah_pegawai_nohp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_nohp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/tambah_pegawai_nohp"
+                android:maxLength="14"
+                android:inputType="phone"
+                android:background="@drawable/retangle"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Cabang -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_cabang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/tambah_pegawai_cabang"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_cabang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/tambah_pegawai_cabang"
+                android:background="@drawable/retangle"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/bt_simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_pegawai_simpan"
+            android:layout_gravity="center"
+            android:backgroundTint="#578FCA" />
+
+    </LinearLayout>
+</ScrollView>
