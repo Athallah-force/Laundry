@@ -56,4 +56,11 @@
     <string name="card_data_layanan_nama">Nama Layanan</string>
     <string name="card_data_layanan_harga">Harga</string>
     <string name="card_data_layanan_cabang">Nama Cabang</string>
+    <string name="card_data_laporan_nama">Nama</string>
+    <string name="card_data_laporan_terdaftar">Terdaftar</string>
+    <string name="card_data_laporan_status">Status Pembayaran</string>
+    <string name="card_data_laporan_layanan">Jenis Pelayanan</string>
+    <string name="card_data_laporan_harga">Harga</string>
+    <string name="card_data_laporan_pembayaran">Bayar</string>
+    <string name="card_data_laporan_lainnya">Layanan lainnya</string>
 </resources>

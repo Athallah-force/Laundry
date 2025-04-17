@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+   <ImageView
+       android:id="@+id/image_login"
+       android:layout_width="wrap_content"
+       android:layout_height="400dp"
+       android:src="@drawable/login"
+       android:alpha="0.50"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+   </ImageView>
+
+    <TextView
+        android:id="@+id/sapaan_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="3"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/anjuran_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silakan Login Untuk Melanjutkan"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="3"
+        app:layout_constraintTop_toBottomOf="@id/sapaan_login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/nomor_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No HP"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/image_login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+ <EditText
+     android:id="@+id/etnomor_login"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="20dp"
+     android:layout_marginTop="10dp"
+     android:background="@drawable/border"
+     android:hint="Masukkan Nomor Anda"
+     android:minHeight="48dp"
+     android:layout_marginEnd="20dp"
+     android:textColor="@color/black"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/nomor_login"/>
+
+    <TextView
+        android:id="@+id/password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No HP"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etnomor_login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etpassword_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nomor Anda"
+        android:background="@drawable/border"
+        android:textColor="@color/black"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/password_login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+    </EditText>
+
+ <Button
+  android:id="@+id/btlogin"
+     android:layout_width="150dp"
+     android:layout_height="50dp"
+     android:layout_marginStart="30dp"
+     android:layout_marginEnd="30dp"
+     android:layout_marginTop="30dp"
+     android:text="LOGIN"
+     app:layout_constraintTop_toBottomOf="@+id/etpassword_login"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent">
+ </Button>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

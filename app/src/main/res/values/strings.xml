@@ -55,4 +55,11 @@
     <string name="card_data_layanan_nama">Tidak Boleh Kosong</string>
     <string name="card_data_layanan_harga">Tidak Boleh Kosong</string>
     <string name="card_data_layanan_cabang">Tidak Boleh Kosong</string>
+    <string name="card_data_laporan_nama">Tidak Boleh Kosong</string>
+    <string name="card_data_laporan_terdaftar">Terisi Otomatis</string>
+    <string name="card_data_laporan_status">Status Pembayaran</string>
+    <string name="card_data_laporan_layanan">Tidak Boleh Kosong</string>
+    <string name="card_data_laporan_harga">Tidak Boleh kosong</string>
+    <string name="card_data_laporan_pembayaran">Pembayaran</string>
+    <string name="card_data_laporan_lainnya">Isi jika perlu</string>
 </resources>

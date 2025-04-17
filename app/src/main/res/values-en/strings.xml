@@ -56,4 +56,11 @@
     <string name="card_data_layanan_nama">Service Name</string>
     <string name="card_data_layanan_harga">Price</string>
     <string name="card_data_layanan_cabang">Branch Store Name</string>
+    <string name="card_data_laporan_nama">Name</string>
+    <string name="card_data_laporan_terdaftar">Register</string>
+    <string name="card_data_laporan_status">Payment Status</string>
+    <string name="card_data_laporan_layanan">Type of Service</string>
+    <string name="card_data_laporan_harga">Price</string>
+    <string name="card_data_laporan_pembayaran">Payment</string>
+    <string name="card_data_laporan_lainnya">Other Service</string>
 </resources>
