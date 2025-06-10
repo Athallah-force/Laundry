@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#4CAF50</color> <!-- Hijau -->
+    <color name="red">#F44336</color>   <!-- Merah -->
+    <color name="yellow">#FED16A</color> <!-- Kuning -->
+
+    <!-- Warna teks utama saat terang -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#444444</color>
+
 </resources>

@@ -23,7 +23,8 @@
                     android:id="@+id/tvJudul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Detail Pelanggan"
+                    android:text="@string/dialog_pelanggan_detail"
+                    android:textColor="?attr/colorOnSurface"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:paddingStart="10dp"
                     android:paddingTop="5dp"
@@ -42,13 +43,15 @@
                         android:id="@+id/tvjudul1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ID Pelanggan"
+                        android:text="@string/dialog_pelanggan_id"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                     <TextView
                         android:id="@+id/tvjudul2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ID Pelanggan"
+                        android:text="@string/dialog_pelanggan_id"
+                        android:textColor="?attr/colorOnSurface"
                         android:gravity="end"
                         android:layout_weight="1.35"/>
                 </LinearLayout>
@@ -64,13 +67,15 @@
                         android:id="@+id/tvjudul3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Pelanggan"
+                        android:text="@string/dialog_pelanggan_nama"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                     <TextView
                         android:id="@+id/tvjudul4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nama Pelanggan"
+                        android:text="@string/dialog_pelanggan_nama"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                 </LinearLayout>
                 <LinearLayout
@@ -86,13 +91,15 @@
                         android:id="@+id/tvjudul5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Alamat"
+                        android:text="@string/dialog_pelanggan_alamat"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                     <TextView
                         android:id="@+id/tvjudul6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Alamat"
+                        android:text="@string/dialog_pelanggan_alamat"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                 </LinearLayout>
                 <LinearLayout
@@ -107,56 +114,40 @@
                         android:id="@+id/tvjudul7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No HP"
+                        android:text="@string/dialog_pelanggan_nomer"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                     <TextView
                         android:id="@+id/tvjudul8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No HP"
+                        android:text="@string/dialog_pelanggan_nomer"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
                     android:background="#B6BBC4"
-                    android:paddingBottom="5dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/tvjudul9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cabang"
-                        android:layout_weight="1.35"/>
-                    <TextView
-                        android:id="@+id/tvjudul10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cabang"
-                        android:layout_weight="1.35"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="5dp"
                     android:orientation="horizontal">
                     <TextView
                         android:id="@+id/tvjudul11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Terdaftar"
+                        android:text="@string/dialog_pelanggan_terdaftar"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                     <TextView
                         android:id="@+id/tvjudul12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Terdaftar"
+                        android:text="@string/dialog_pelanggan_terdaftar"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_weight="1.35"/>
                 </LinearLayout>
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -171,7 +162,8 @@
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_marginEnd="3dp"
-                        android:text="Sunting"
+                        android:text="@string/button_sunting"
+                        android:textColor="@color/white"
                         app:icon="@drawable/edit"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -182,7 +174,8 @@
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_marginEnd="3dp"
-                        android:text="Hapus"
+                        android:text="@string/button_hapus"
+                        android:textColor="@color/white"
                         app:icon="@drawable/trash"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"

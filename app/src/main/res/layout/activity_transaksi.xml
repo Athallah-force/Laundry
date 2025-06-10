@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaksi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transaksi">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/cd_transaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Judul -->
+            <TextView
+                android:text="@string/judul_pelanggan"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Nama Pelanggan -->
+            <TextView
+                android:id="@+id/tvNamaPelangganLabel"
+                android:text="@string/tambah_pelanggan_nama"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <!-- No HP -->
+            <TextView
+                android:id="@+id/tvNoHP"
+                android:text="@string/tambah_pelanggan_no"
+                android:layout_width="wrap_content"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <!-- Tombol Pilih Pelanggan -->
+            <Button
+                android:id="@+id/btnPilihPelanggan"
+                android:text="@string/pilih_pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2196F3" />
+
+            <!-- Layanan Utama Title -->
+            <TextView
+                android:id="@+id/tvLayananUtama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/judul_layanan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="?attr/colorOnSurface"/>
+
+            <!-- Nama Layanan -->
+            <TextView
+                android:id="@+id/tvNamaLayananLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_data_layanan_nama"
+                android:layout_marginTop="12dp"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface" />
+
+            <!-- Harga -->
+            <TextView
+                android:id="@+id/tvHargaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_data_layanan_harga"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface" />
+
+            <!-- Button Pilih Layanan -->
+            <Button
+                android:id="@+id/btnPilihLayanan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/pilih_layanan"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2196F3" />
+
+            <!-- Layanan Tambahan Title -->
+            <TextView
+                android:id="@+id/tvLayananTambahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/judul_tambahan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ncv_transaksi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvTransaksi">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_LayananTambahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            tools:listitem="">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card_transaksi_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_transaksi_tambah"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FFC107"
+                android:text="@string/button_tambahkan"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/bt_transaksi_proses"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#4CAF50"
+                android:text="@string/button_proses"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <!-- Gambar dan header -->
+    <ImageView
+        android:id="@+id/image_register"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/login"
+        android:alpha="0.50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/sapaan_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sapaan_register"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="3"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:id="@+id/anjuran_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/anjuran_register"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="3"
+        app:layout_constraintTop_toBottomOf="@id/sapaan_register"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Scrollable Form -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/image_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/nama_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tambah_pelanggan_nama"
+                android:textSize="15sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/etnama_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/masukkan_nama"
+                android:minHeight="48dp"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/nomor_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tambah_pelanggan_no"
+                android:textSize="15sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:id="@+id/etnomor_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="@string/masukkan_nomor"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/password_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_register"
+                android:textSize="15sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:id="@+id/etpassword_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/masukkan_sandi"
+                android:background="@drawable/border"
+                android:textColor="?attr/colorOnSurface"
+                android:minHeight="48dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btregister"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="@string/button_register" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

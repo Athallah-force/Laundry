@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".konfirmasiActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judul_konfirmasi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- Data Pelanggan -->
+        <TextView
+            android:id="@+id/textNamaPelanggan"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_pelanggan_nama" />
+
+        <TextView
+            android:id="@+id/textNoHp"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_pelanggan_no" />
+
+        <!-- Layanan Utama -->
+        <TextView
+            android:id="@+id/textLayananUtama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:text="@string/layanan"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/textHargaUtama"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_height="wrap_content"
+            android:text="@string/tambahan_harga" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Label Tambahan -->
+        <TextView
+            android:id="@+id/textLayananTambahanLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judul_tambahan"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:paddingBottom="4dp" />
+
+        <!-- List Tambahan -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLayananTambahan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="8dp" />
+
+        <!-- Total Bayar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textTotalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Total"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textTotalBayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp0,00"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Tombol Aksi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/buttonBatal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_batal"
+                android:backgroundTint="#FFC107"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/buttonBayar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_bayar"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

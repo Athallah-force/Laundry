@@ -5,7 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_margin="10dp"
-    android:backgroundTint="@color/white"
     app:cardCornerRadius="15dp">
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,6 +23,7 @@
                 android:text="@string/card_data_pegawai"
                 android:textStyle="bold"
                 android:padding="10dp"
+                android:textColor="@color/white"
                 android:paddingStart="10dp"
                 android:paddingTop="5dp"/>
             <TextView
@@ -31,6 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
+                android:textColor="@color/white"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"
                 />
@@ -46,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/card_data_pegawai_nama"
+                android:textColor="?attr/colorOnSurface"
                 android:textStyle="bold"
                 android:paddingStart="10dp"
                 android:textSize="16sp"
@@ -57,6 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="16sp"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"
@@ -75,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/card_data_pegawai_alamat"
+                android:textColor="?attr/colorOnSurface"
                 android:paddingStart="10dp"
                 android:textStyle="bold"
                 android:textSize="16sp"
@@ -87,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:text="-"
                 android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"/>
 
@@ -103,6 +108,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/card_data_pegawai_terdaftar"
                 android:paddingStart="10dp"
+                android:textColor="?attr/colorOnSurface"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:layout_marginTop="5dp"
@@ -114,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:text="-"
                 android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_marginTop="5dp"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"/>
@@ -131,6 +138,7 @@
                 android:text="@string/tambah_pegawai_cabang"
                 android:paddingStart="10dp"
                 android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="16sp"
                 android:layout_marginTop="5dp"
                 />
@@ -142,6 +150,7 @@
                 android:text="-"
                 android:textSize="16sp"
                 android:layout_marginTop="5dp"
+                android:textColor="?attr/colorOnSurface"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
@@ -159,6 +168,7 @@
                 android:paddingStart="10dp"
                 android:textStyle="bold"
                 android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_marginTop="5dp"
                 />
             <TextView
@@ -168,6 +178,7 @@
                 android:text="-"
                 android:textSize="16sp"
                 android:layout_marginTop="5dp"
+                android:textColor="?attr/colorOnSurface"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"/>
 
@@ -195,6 +206,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:backgroundTint="#B2C8DF"
+                android:textColor="@color/white"
                 android:text="@string/card_data_hubungi" />
 
             <Button
@@ -202,6 +214,7 @@
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:text="@string/card_data_lihat"
+                android:textColor="@color/white"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="#A1E3F9"

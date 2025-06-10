@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
 
     <application
         android:allowBackup="true"
@@ -15,8 +18,51 @@
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
         <activity
-            android:name=".Login_Activity"
+            android:name=".Akun"
             android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".cabang.Tambah_cabang"
+            android:exported="false" />
+        <activity
+            android:name=".cabang.Data_cabang"
+            android:exported="false" />
+        <activity
+            android:name=".struk_pembayaran"
+            android:exported="false" />
+        <activity
+            android:name=".konfirmasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pilih_tambahan"
+            android:exported="false" />
+        <activity
+            android:name="tambahkan.Tambah_tambahkan"
+            android:exported="false" />
+        <activity
+            android:name="tambahkan.Data_tambahkan"
+            android:exported="false" />
+        <activity
+            android:name=".PilihLayanan"
+            android:exported="false" />
+        <activity
+            android:name=".PilihPelanggan"
+            android:exported="false" />
+        <activity
+            android:name=".Transaksi"
+            android:exported="false" />
+
+        <activity android:name=".Login_Activity"
+                  android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".activity_data_laporan"
             android:exported="false" />
@@ -33,9 +79,6 @@
             android:name="pegawai.data_pegawai_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activity_layanan_pelanggan"
-            android:exported="false" />
-        <activity
             android:name="pelanggan.tambah_pelanggan_Activity"
             android:exported="false" />
         <activity
@@ -43,12 +86,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
     </application>
 

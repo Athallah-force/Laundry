@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/Hubungi_pegawai"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/metode_hubungi"
+        android:textSize="14sp"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnWhatsapp"
+        android:text="WhatsApp"
+        android:textAllCaps="false"
+        android:backgroundTint="#25D366"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnTelepon"
+        android:text="@string/button_telfon"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4285F4"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBatal"
+        android:text="@string/button_batal"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#7F55B1"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

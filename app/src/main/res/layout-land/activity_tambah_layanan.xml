@@ -20,6 +20,8 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
+            android:shadowRadius="4"
+            android:shadowColor="@color/black"
             android:gravity="center"
             android:layout_marginBottom="32dp" />
 
@@ -37,6 +39,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="?attr/colorOnSurface"
                 android:text="@string/tambah_layanan_nama"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -45,8 +48,9 @@
                 android:id="@+id/et_nama_layanan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_weight="2"
-                android:hint="@string/tambah_layanan_nama"
+                android:hint="@string/masukkan_layanan"
                 android:background="@drawable/retangle"
                 android:padding="12dp" />
         </LinearLayout>
@@ -62,6 +66,7 @@
             <TextView
                 android:id="@+id/tv_harga"
                 android:layout_width="0dp"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_height="wrap_content"
                 android:paddingStart="20dp"
                 android:layout_weight="1"
@@ -74,7 +79,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:hint="@string/tambah_layanan_harga"
+                android:textColor="?attr/colorOnSurface"
+                android:hint="@string/masukkan_harga"
+                android:inputType="numberDecimal"
                 android:background="@drawable/retangle"
                 android:padding="12dp" />
         </LinearLayout>
@@ -92,6 +99,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="20dp"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_weight="1"
                 android:text="@string/tambah_layanan_cabang"
                 android:textSize="16sp"
@@ -102,7 +110,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:hint="@string/tambah_layanan_cabang"
+                android:hint="@string/masukkan_cabang"
+                android:textColor="?attr/colorOnSurface"
                 android:background="@drawable/retangle"
                 android:padding="12dp" />
         </LinearLayout>
@@ -113,6 +122,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tambah_pelanggan"
+            android:textColor="@color/white"
             android:backgroundTint="#578FCA" />
 
     </LinearLayout>

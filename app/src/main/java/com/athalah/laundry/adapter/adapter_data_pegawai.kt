@@ -34,6 +34,8 @@ class  adapter_data_pegawai(private val listPegawai: ArrayList<model_pegawai>) :
         holder.tv_nohp.text = item.nohp
 
         holder.bt_hubungi.setOnClickListener(){
+            val nomorHp = item.nohp
+            nomorHp?.let { it1 -> showHubungiDialog(holder.itemView.context, it1) }
 
         }
         holder.bt_lihat.setOnClickListener(){
@@ -49,6 +51,60 @@ class  adapter_data_pegawai(private val listPegawai: ArrayList<model_pegawai>) :
             intent.putExtra("terdaftar", item.terdaftar)
             intent.putExtra("nohp", item.nohp)
             appContext.startActivity(intent)
+
+        }
+
+        holder.bt_lihat.setOnClickListener {
+            val dialogView = LayoutInflater.from(holder.itemView.context)
+                .inflate(R.layout.dialog_mod_pegawai, null)
+
+            val dialog = android.app.AlertDialog.Builder(holder.itemView.context)
+                .setView(dialogView)
+                .create()
+
+            // Set data ke TextView di dialog
+            dialogView.findViewById<TextView>(R.id.tvjudul2).text = item.id
+            dialogView.findViewById<TextView>(R.id.tvjudul4).text = item.nama
+            dialogView.findViewById<TextView>(R.id.tvjudul6).text = item.alamat
+            dialogView.findViewById<TextView>(R.id.tvjudul8).text = item.nohp
+            dialogView.findViewById<TextView>(R.id.tvjudul10).text = item.cabang
+            dialogView.findViewById<TextView>(R.id.tvjudul12).text = item.terdaftar
+
+            // Tombol Edit
+            dialogView.findViewById<Button>(R.id.buttonsunting).setOnClickListener {
+                val intent = Intent(holder.itemView.context, tambah_pegawai_Activity::class.java)
+                intent.putExtra("judul", "edit")
+                intent.putExtra("id", item.id)
+                intent.putExtra("nama", item.nama)
+                intent.putExtra("alamat", item.alamat)
+                intent.putExtra("cabang", item.cabang)
+                intent.putExtra("terdaftar", item.terdaftar)
+                intent.putExtra("nohp", item.nohp)
+                holder.itemView.context.startActivity(intent)
+                dialog.dismiss()
+            }
+
+            // Tombol Hapus
+            dialogView.findViewById<Button>(R.id.buttonhapus).setOnClickListener {
+                android.app.AlertDialog.Builder(holder.itemView.context)
+                    .setTitle("Hapus pegawai?")
+                    .setMessage("Data pegawai akan dihapus.")
+                    .setPositiveButton("Hapus") { _, _ ->
+                        // Hapus dari Firebase
+                        val db = com.google.firebase.database.FirebaseDatabase.getInstance()
+                            .getReference("pegawai")
+                        item.id?.let { it1 ->
+                            db.child(it1).removeValue().addOnSuccessListener {
+                                android.widget.Toast.makeText(holder.itemView.context, "Data dihapus", android.widget.Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                        dialog.dismiss()
+                    }
+                    .setNegativeButton("Batal", null)
+                    .show()
+            }
+
+            dialog.show()
 
         }
     }
@@ -69,5 +125,43 @@ class  adapter_data_pegawai(private val listPegawai: ArrayList<model_pegawai>) :
         val bt_lihat: Button = itemView.findViewById(R.id.bt_lihat)
 
     }
+
+    private fun showHubungiDialog(context: Context, phoneNumber: String) {
+        val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_hubungi_pegawai, null)
+        val dialog = android.app.AlertDialog.Builder(context)
+            .setView(dialogView)
+            .create()
+
+        val btnWhatsapp = dialogView.findViewById<Button>(R.id.btnWhatsapp)
+        val btnTelepon = dialogView.findViewById<Button>(R.id.btnTelepon)
+        val btnBatal = dialogView.findViewById<Button>(R.id.btnBatal)
+
+        btnWhatsapp.setOnClickListener {
+            val formattedNumber = if (phoneNumber.startsWith("0")) {
+                "+62" + phoneNumber.substring(1)
+            } else {
+                phoneNumber
+            }
+            val url = "https://wa.me/$formattedNumber"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = android.net.Uri.parse(url)
+            context.startActivity(intent)
+            dialog.dismiss()
+        }
+
+        btnTelepon.setOnClickListener {
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = android.net.Uri.parse("tel:$phoneNumber")
+            context.startActivity(intent)
+            dialog.dismiss()
+        }
+
+        btnBatal.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
+    }
+
 
 }

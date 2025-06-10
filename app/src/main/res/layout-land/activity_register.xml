@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <!-- KIRI: FrameLayout untuk Image + Text -->
+    <FrameLayout
+        android:id="@+id/frame_kiri"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scroll_register_form"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/image_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login"
+            android:alpha="0.5" />
+
+        <TextView
+            android:id="@+id/sapaan_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sapaan_register"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="3"
+            android:layout_gravity="top|start"
+            android:layout_margin="24dp" />
+
+        <TextView
+            android:id="@+id/anjuran_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anjuran_register"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="3"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="80dp" />
+    </FrameLayout>
+
+    <!-- KANAN: ScrollView untuk Form -->
+    <ScrollView
+        android:id="@+id/scroll_register_form"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame_kiri">
+
+        <LinearLayout
+            android:id="@+id/layout_kanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/nama_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tambah_pelanggan_nama"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etnama_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tambah_pelanggan_nama"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/nomor_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tambah_pelanggan_no"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:id="@+id/etnomor_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tambah_pelanggan_no"
+                android:minHeight="48dp"
+                android:inputType="number"
+                android:background="@drawable/border"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/password_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_register"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:id="@+id/etpassword_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_register"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_register"
+                android:textColor="@color/white"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

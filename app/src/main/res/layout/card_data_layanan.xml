@@ -6,8 +6,7 @@
     android:layout_margin="10dp"
     app:cardCornerRadius="15dp"
     android:id="@+id/card_layanan"
-    app:cardElevation="5dp"
-    android:backgroundTint="@color/white">
+    app:cardElevation="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +57,7 @@
                 android:textStyle="bold"
                 android:padding="10dp"
                 android:textSize="16sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="?attr/colorOnSurface"/>
 
             <TextView
                 android:id="@+id/tv_nama_layanan"
@@ -67,7 +66,7 @@
                 android:text="-"
                 android:textSize="16sp"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
 
@@ -84,7 +83,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:padding="10dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="?attr/colorOnSurface"/>
 
             <TextView
                 android:id="@+id/tv_harga"
@@ -92,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:text="-"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorOnSurface"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"/>
 
@@ -111,14 +110,14 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:padding="10dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="?attr/colorOnSurface"/>
 
             <TextView
                 android:id="@+id/tv_nama_cabang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="16sp"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:layout_marginStart="10dp"/>
