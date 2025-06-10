@@ -45,7 +45,7 @@ class register : AppCompatActivity() {
                     dbRef.child(nohp).setValue(user)
                         .addOnSuccessListener {
                             Toast.makeText(this, getString(R.string.berhasil_regis), Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this, Login_Activity::class.java))
+                            startActivity(Intent(this, MainActivity::class.java))
                             finish()
                         }
                         .addOnFailureListener { e ->

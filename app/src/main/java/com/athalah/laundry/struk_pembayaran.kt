@@ -1,11 +1,9 @@
 package com.athalah.laundry
 
 import android.bluetooth.BluetoothAdapter
-import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothSocket
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.icu.text.NumberFormat
 import android.icu.text.SimpleDateFormat
 import android.net.Uri
 import android.os.Build
@@ -14,16 +12,14 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.athalah.laundry.adapter.adapter_tambahan_dipilih
 import com.athalah.laundry.model_data.model_laporan
 import com.athalah.laundry.model_data.model_tambahkan
 import java.io.OutputStream
+import java.text.NumberFormat
 import java.util.Date
 import java.util.Locale
 import java.util.UUID
@@ -112,15 +108,15 @@ class struk_pembayaran : AppCompatActivity() {
         tvIdTransaksi.text = idTransaksi
         tvNamaPelanggan.text = namaPelanggan
         tvLayananUtama.text = namaLayanan
-        tvHargaLayanan.text = formatRupiah(hargaLayanan)
+        tvHargaLayanan.text = formatRupiahManual(hargaLayanan.toInt())
 
         listTambahan.clear()
         listTambahan.addAll(tambahan)
         adapter.notifyDataSetChanged()
 
         val subtotal = tambahan.sumOf { extractHargaFromString(it.harga ?: "0") }
-        tvSubtotalTambahan.text = formatRupiah(subtotal)
-        tvTotalBayar.text = formatRupiah(totalBayar)
+        tvSubtotalTambahan.text = formatRupiahManual(subtotal.toInt())
+        tvTotalBayar.text = formatRupiahManual(totalBayar.toInt())
 
         simpanKeFirebase()
     }
@@ -180,39 +176,77 @@ class struk_pembayaran : AppCompatActivity() {
         return cleaned.toDoubleOrNull() ?: 0.0
     }
 
-    private fun formatRupiah(amount: Double): String {
-        val formatter = NumberFormat.getCurrencyInstance(Locale("in", "ID"))
-        return formatter.format(amount)
+    fun formatRupiahManual(value: Int): String {
+        val format = NumberFormat.getNumberInstance(Locale("in", "ID"))
+        return "Rp" + format.format(value)
     }
+
 
     private fun setupPrintButton() {
         btnCetak.setOnClickListener {
             val message = StringBuilder().apply {
-                append("\n========= INVOICE =========\n")
-                append("ID       : ${tvIdTransaksi.text}\n")
-                append("Tanggal  : ${tvTanggal.text}\n")
-                append("Pelanggan: ${tvNamaPelanggan.text}\n")
-                append("-----------------------------\n")
-                append("${tvLayananUtama.text.toString().padEnd(10)} : ${tvHargaLayanan.text}\n")
+                append("\n=========== INVOICE ===========\n")
+                append("ID        : ${tvIdTransaksi.text}\n")
+                append("Tanggal   : ${tvTanggal.text}\n")
+                append("Pelanggan : ${tvNamaPelanggan.text}\n")
+                append("================================\n")
 
-                if (listTambahan.isNotEmpty()) {
-                    append("\nRincian Tambahan:\n")
-                    listTambahan.forEachIndexed { i, item ->
-                        append("${i + 1}. ${item.namaTambahan?.padEnd(10)} - Rp${item.harga}\n")
-                    }
+                // Harga layanan utama
+                val hargaLayananInt = tvHargaLayanan.text.toString()
+                    .replace("Rp", "")
+                    .replace(".", "")
+                    .replace(",", "")
+                    .trim()
+                    .toIntOrNull() ?: 0
+
+                append("${tvLayananUtama.text.toString().capitalize().padEnd(12)}: ${formatRupiahManual(hargaLayananInt)}\n")
+                append("================================\n")
+
+                // Tambahan
+                listTambahan.forEachIndexed { i, item ->
+                    val nama = item.namaTambahan?.capitalize()?.padEnd(12) ?: ""
+
+                    val hargaInt = item.harga
+                        ?.replace("Rp", "")
+                        ?.replace(".", "")
+                        ?.replace(",", "")
+                        ?.trim()
+                        ?.toIntOrNull() ?: 0
+
+                    val harga = formatRupiahManual(hargaInt)
+                    append("${i + 1}. $nama - $harga\n")
+                    append("================================\n")
                 }
 
-                append("-----------------------------\n")
-                append("Subtotal     : ${tvSubtotalTambahan.text}\n")
-                append("TOTAL BAYAR  : ${tvTotalBayar.text}\n")
-                append("============================\n")
-                append("Terima kasih!\n\n")
+
+                // Subtotal dan Total
+                val subtotalInt = tvSubtotalTambahan.text.toString()
+                    .replace("Rp", "")
+                    .replace(".", "")
+                    .replace(",", "")
+                    .trim()
+                    .toIntOrNull() ?: 0
+
+                val totalInt = tvTotalBayar.text.toString()
+                    .replace("Rp", "")
+                    .replace(".", "")
+                    .replace(",", "")
+                    .trim()
+                    .toIntOrNull() ?: 0
+
+                append("Subtotal     : ${formatRupiahManual(subtotalInt)}\n")
+                append("TOTAL BAYAR  : ${formatRupiahManual(totalInt)}\n")
+                append("================================\n")
+                append("      Terima kasih telah\n")
+                append("        menggunakan jasa\n")
+                append("           laundry kami\n\n")
             }.toString()
 
             printToBluetooth(message)
-
         }
     }
+
+
 
     private fun setupWhatsappButton() {
         btnKirimWhatsapp.setOnClickListener {
@@ -223,7 +257,9 @@ class struk_pembayaran : AppCompatActivity() {
                 append("• Harga: ${tvHargaLayanan.text}\n\n")
                 append("*Rincian Tambahan:*\n")
                 listTambahan.forEachIndexed { i, item ->
-                    append("${i + 1}. ${item.namaTambahan} - ${formatRupiah(extractHargaFromString(   item.harga ?: "0"))}\n")
+                    append("${i + 1}. ${item.namaTambahan} - ${formatRupiahManual(
+                        extractHargaFromString(   item.harga ?: "0").toInt()
+                    )}\n")
                 }
                 append("\n*Total Bayar:* ${tvTotalBayar.text}\n\n")
                 append("Terima kasih telah menggunakan layanan Floppy Laundry 💟")
