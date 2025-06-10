@@ -16,7 +16,7 @@
             android:id="@+id/fab_tambah_tambahkan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tambah_layanan"
+            android:text="@string/tambah_tambahan"
             android:textSize="24sp"
             android:shadowColor="@color/black"
             android:shadowRadius="4"
