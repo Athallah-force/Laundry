@@ -5,121 +5,121 @@
 <h2>Login dan Register</h2>
 <table>
   <tr>
-    <td><img src="path/to/login foto.jpeg" width="250"/></td>
-    <td><img src="path/to/login land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/login foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/login land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/register foto.jpeg" width="250"/></td>
-    <td><img src="path/to/register land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/register foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/register land.jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Home dan Akun</h2>
 <table>
   <tr>
-    <td><img src="path/to/home foto.jpeg" width="250"/></td>
-    <td><img src="path/to/home land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/home foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/home land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/akun foto.jpeg" width="250"/></td>
-    <td><img src="path/to/akun land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/akun foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/akun land.jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Data Pelanggan</h2>
 <table>
   <tr>
-    <td><img src="path/to/pelanggan foto.jpeg" width="250"/></td>
-    <td><img src="path/to/pelanggan land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/pelanggan foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/pelanggan land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/detail pelanggan.jpeg" width="250"/></td>
-    <td><img src="path/to/hubungi pelanggan.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/detail pelanggan.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/hubungi pelanggan.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/edit pelanggan.jpeg" width="250"/></td>
-    <td><img src="path/to/tambah pelanggan foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/edit pelanggan.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah pelanggan foto.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/tambah pelanggan land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah pelanggan land.jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Data Pegawai</h2>
 <table>
   <tr>
-    <td><img src="path/to/pegawai foto.jpeg" width="250"/></td>
-    <td><img src="path/to/pegawai land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/pegawai foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/pegawai land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/detail pegawai.jpeg" width="250"/></td>
-    <td><img src="path/to/hubungi pegawai.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/detail pegawai.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/hubungi pegawai.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/edit pegawai.jpeg" width="250"/></td>
-    <td><img src="path/to/tambah pegawai foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/edit pegawai.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah pegawai foto.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/tambah pegawai land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah pegawai land.jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Laporan</h2>
 <table>
   <tr>
-    <td><img src="path/to/laporan foto.jpeg" width="250"/></td>
-    <td><img src="path/to/laporan land .jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/laporan foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/laporan land .jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Layanan</h2>
 <table>
   <tr>
-    <td><img src="path/to/layanan foto.jpeg" width="250"/></td>
-    <td><img src="path/to/layanan land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/layanan foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/layanan land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/tambah layanan foto.jpeg" width="250"/></td>
-    <td><img src="path/to/tambah layanan land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah layanan foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah layanan land.jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Cabang</h2>
 <table>
   <tr>
-    <td><img src="path/to/cabang foto.jpeg" width="250"/></td>
-    <td><img src="path/to/cabang land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/cabang foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/cabang land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/tambah cabang foto.jpeg" width="250"/></td>
-    <td><img src="path/to/tambah cabang land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah cabang foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah cabang land.jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Tambahan</h2>
 <table>
   <tr>
-    <td><img src="path/to/tambahan foto.jpeg" width="250"/></td>
-    <td><img src="path/to/tambahan land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambahan foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambahan land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/tambah tambahan foto.jpeg" width="250"/></td>
-    <td><img src="path/to/tambah tambahan land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah tambahan foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/tambah tambahan land.jpeg" width="250"/></td>
   </tr>
 </table>
 
 <h2>Transaksi</h2>
 <table>
   <tr>
-    <td><img src="path/to/transaksi foto.jpeg" width="250"/></td>
-    <td><img src="path/to/transaksi land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/transaksi foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/transaksi land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/konfir pembayaran foto.jpeg" width="250"/></td>
-    <td><img src="path/to/konfir pembayaran land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/konfir pembayaran foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/konfir pembayaran land.jpeg" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="path/to/struk foto.jpeg" width="250"/></td>
-    <td><img src="path/to/struk land.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/struk foto.jpeg" width="250"/></td>
+    <td><img src="app/src/main/res/drawable/android/struk land.jpeg" width="250"/></td>
   </tr>
 </table>
